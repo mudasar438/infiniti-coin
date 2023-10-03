@@ -7,7 +7,7 @@ import Header from "./Header";
 
 const Parent = () => {
   return (
-    <Box sx={{ background: "#080A0B" }}>
+    <Box sx={{ background: "#000000" }}>
       <Hidden mdDown>
         <Navbar />
       </Hidden>
@@ -16,24 +16,6 @@ const Parent = () => {
       </Hidden>
 
       <Box>
-        <Container>
-          <Box
-            sx={{
-              position: "absolute",
-              transform: "translateX(-129px)",
-              height: "300px",
-              maxWidth: "90%",
-              width: "300px",
-              opacity: 0.6,
-              zIndex: 1,
-
-              borderRadius: "50%",
-              // background: "#080A0B",
-              background: "#58C5DA",
-              filter: "blur(150px)",
-            }}
-          />
-        </Container>
         <Box
           sx={{
             display: "flex",
