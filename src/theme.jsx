@@ -15,54 +15,54 @@ let theme1 = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Satoshi, sans-serif", "'Roboto', sans-serif"].join(","),
+    fontFamily: [" 'Jura', sans-serif", "'Lexend', sans-serif"].join(","),
     h1: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontSize: "54px",
       fontWeight: "900",
     },
     h2: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontSize: "40px",
       fontWeight: "700",
     },
     h3: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontSize: "32px",
       fontWeight: "700",
     },
     h4: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontSize: "22px",
     },
 
     body: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontSize: "16px",
     },
     body1: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
     },
     body2: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontStyle: "normal",
       fontWeight: 400,
       color: "#D6D6D6",
     },
     subtitle: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontSize: "16px",
       fontWeight: 400,
     },
     gray: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontStyle: "normal",
       fontWeight: 400,
       color: "rgba(255, 255, 255, 0.60)",
       fontSize: "16px",
     },
     geryBold: {
-      fontFamily: "Satoshi, sans-serif",
+      fontFamily: "Jura, sans-serif",
       fontStyle: "normal",
       fontWeight: 700,
       color: "#D6D6D6",
