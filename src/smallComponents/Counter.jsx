@@ -1,9 +1,8 @@
 import { Box, Typography, styled } from "@mui/material";
+import moment from "moment-timezone";
 import { useState, useEffect } from "react";
 import couterbg from "../assets/couterbg.png";
 import couterbg1 from "../assets/couterbg1.png";
-
-import moment from "moment-timezone";
 
 const TextStyled = styled(Typography)(({ theme }) => ({
   color: "#000",
@@ -64,7 +63,6 @@ const DownCounter = ({ time }) => {
     <>
       <Box
         sx={{
-          // width: { xs: "100%", md: "50%" },
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -136,13 +134,6 @@ const DownCounter = ({ time }) => {
             height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
-          //   sx={{
-          //     borderRadius: "8px",
-          //     px: { xs: 1, md: 1 },
-          //     display: "flex",
-          //     flexDirection: "column",
-          //     alignItems: "center",
-          //   }}
         >
           <CountdownBox>
             <TextStyleSmall>Hours</TextStyleSmall>
@@ -188,13 +179,6 @@ const DownCounter = ({ time }) => {
             height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
-          //   sx={{
-          //     borderRadius: "8px",
-          //     px: { xs: 1, md: 1 },
-          //     display: "flex",
-          //     flexDirection: "column",
-          //     alignItems: "center",
-          //   }}
         >
           <CountdownBox>
             <TextStyleSmall>Minutes</TextStyleSmall>
@@ -240,13 +224,6 @@ const DownCounter = ({ time }) => {
             height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
-          //   sx={{
-          //     borderRadius: "8px",
-          //     px: { xs: 1, md: 1 },
-          //     display: "flex",
-          //     flexDirection: "column",
-          //     alignItems: "center",
-          //   }}
         >
           <CountdownBox>
             <TextStyleSmall>Seconds</TextStyleSmall>
@@ -273,12 +250,5 @@ const DownCounter = ({ time }) => {
     </>
   );
 };
-
-// return (
-//   <div>
-//     <p>{formatTime(timeRemaining)}</p>
-//   </div>
-// );
-// };
 
 export default DownCounter;
