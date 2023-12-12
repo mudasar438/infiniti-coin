@@ -158,7 +158,10 @@ const DownCounter = ({ time }) => {
                 // mt: { xs: 1.5, md: 2.4 },
               }}
             >
-              {timeRemaining?.hours}
+              {timeRemaining?.hours < 10
+                ? // eslint-disable-next-line no-unsafe-optional-chaining
+                  "0" + timeRemaining?.hours
+                : timeRemaining?.hours}
             </TextStyled>
           </CountdownBox>
         </Box>
@@ -207,7 +210,10 @@ const DownCounter = ({ time }) => {
                 // mt: { xs: 1.5, md: 2.4 },
               }}
             >
-              {timeRemaining?.minutes}
+              {timeRemaining?.minutes < 10
+                ? // eslint-disable-next-line no-unsafe-optional-chaining
+                  "0" + timeRemaining?.minutes
+                : timeRemaining?.minutes}
             </TextStyled>
           </CountdownBox>
         </Box>
@@ -256,7 +262,10 @@ const DownCounter = ({ time }) => {
                 // mt: { xs: 1.5, md: 2.4 },
               }}
             >
-              {timeRemaining?.seconds}
+              {timeRemaining?.seconds < 10
+                ? // eslint-disable-next-line no-unsafe-optional-chaining
+                  "0" + timeRemaining?.seconds
+                : timeRemaining?.seconds}
             </TextStyled>
           </CountdownBox>
         </Box>
