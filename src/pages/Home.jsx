@@ -71,9 +71,10 @@ const Home = () => {
           >
             Coming Soon
           </Typography>
-          <Typography sx={{ textAlign: "center" }}>
-            Our website is under construction. We're working hard to improve our
-            website and we'll ready to launch after
+          <Typography
+            sx={{ textAlign: "center", fontSize: { xs: "16px", md: "30px" } }}
+          >
+            Get Ready For Our ICO Lunch  🚀
           </Typography>
           <Box>
             <DownCounter />
