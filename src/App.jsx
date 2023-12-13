@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 function App() {
   const [loading, setLoading] = useState(true);
   return (
-    <div style={{ background: "#0C090E" }}>
+    <div style={{}}>
       <Suspense fallback={<Loading loading={loading} />}>
         <Home />
       </Suspense>
