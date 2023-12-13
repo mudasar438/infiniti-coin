@@ -9,10 +9,11 @@ import Footer from "../smallComponents/Footer";
 
 const Home = () => {
   return (
-    <Box sx={{ background: "#0C090E", minHeight: "100vh" }}>
+    <Box sx={{ background: "#0C090E", height: "auto", minHeight: "600px" }}>
       <Box
         sx={{
-          height: { xs: "auto", sm: "100vh" },
+          height: "auto",
+          minHeighteight: { xs: "auto", sm: "100vh" },
           backgroundImage: { xs: `url(${mhomebg})`, sm: `url(${homebg})` },
           width: "100%",
           mixBlendMode: "normal",
