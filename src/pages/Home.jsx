@@ -11,7 +11,7 @@ const Home = () => {
     <Box sx={{ background: "#0C090E" }}>
       <Box
         sx={{
-          height: "100vh",
+          height: { xs: "auto", sm: "100vh" },
           backgroundImage: { xs: `url(${mhomebg})`, sm: `url(${homebg})` },
           width: "100%",
           mixBlendMode: "normal",
