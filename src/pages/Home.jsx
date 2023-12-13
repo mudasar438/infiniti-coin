@@ -5,10 +5,11 @@ import logo from "../assets/logo.png";
 import DownCounter from "../smallComponents/Counter";
 import menu from "../assets/menu.png";
 import mhomebg from "../assets/mhomebg.png";
+import Footer from "../smallComponents/Footer";
 
 const Home = () => {
   return (
-    <Box sx={{ background: "#0C090E" }}>
+    <Box sx={{ background: "#0C090E", minHeight: "100vh" }}>
       <Box
         sx={{
           height: { xs: "auto", sm: "100vh" },
