@@ -1,8 +1,33 @@
 import { Box, Typography, styled } from "@mui/material";
 import moment from "moment-timezone";
 import { useState, useEffect } from "react";
+import { makeStyles } from "@mui/styles";
 import couterbg from "../assets/couterbg.png";
 import couterbg1 from "../assets/couterbg1.png";
+
+const useStyles = makeStyles((theme) => ({
+  gradientBackground: {
+    mixBlendMode: "normal",
+    backgroundPosition: { xs: "center", md: "right" },
+    backgroundRepeat: "no-repeat",
+    overflow: "hidden",
+    backgroundSize: "100% 100%",
+    backgroundImage: {
+      xs: "linear-gradient(to bottom right, #7CDDD1, #68B0E3, #9763A9)",
+      sm: `url(${couterbg})`, // Replace couterbg with your image source
+    },
+    boxSizing: "border-box",
+    borderRadius: "8px",
+    px: { xs: 1, md: 0 },
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    width: { xs: "190px", sm: "150px", md: "300px" },
+    height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
+    position: "relative",
+  },
+}));
 
 const TextStyled = styled(Typography)(({ theme }) => ({
   color: "#000",
@@ -36,6 +61,7 @@ const CountdownBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {},
 }));
 const DownCounter = ({ time }) => {
+  const classes = useStyles();
   const targetDate = moment.tz("2024-01-01T00:00:00", "Asia/Dubai");
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
   function getTimeRemaining() {
@@ -71,16 +97,15 @@ const DownCounter = ({ time }) => {
       >
         <Box
           sx={{
-            backgroundImage: {
-              xs: `url(${couterbg1})`,
-              sm: `url(${couterbg})`,
-            },
             mixBlendMode: "normal",
             backgroundPosition: { xs: "center", md: "right" },
             backgroundRepeat: "no-repeat",
             overflow: "hidden",
             backgroundSize: "100% 100%",
-            // backgroundColor: { xs: "#D9D9D9", sm: "transparent" },
+            backgroundImage: {
+              xs: "linear-gradient(to bottom right, #7CDDD1, #68B0E3, #9763A9)",
+              sm: `url(${couterbg})`,
+            },
             boxSizing: "border-box",
             borderRadius: "8px",
             px: { xs: 1, md: 0 },
@@ -88,8 +113,8 @@ const DownCounter = ({ time }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            width: { xs: "190px", sm: "150px", md: "300px" },
-            height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
+            width: { xs: "60px", sm: "150px", md: "300px" },
+            height: { xs: "60px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
         >
@@ -113,16 +138,15 @@ const DownCounter = ({ time }) => {
         </Box>
         <Box
           sx={{
-            backgroundImage: {
-              xs: `url(${couterbg1})`,
-              sm: `url(${couterbg})`,
-            },
             mixBlendMode: "normal",
             backgroundPosition: { xs: "center", md: "right" },
             backgroundRepeat: "no-repeat",
             overflow: "hidden",
             backgroundSize: "100% 100%",
-            // backgroundColor: { xs: "#D9D9D9", sm: "transparent" },
+            backgroundImage: {
+              xs: "linear-gradient(to bottom right, #7CDDD1, #68B0E3, #9763A9)",
+              sm: `url(${couterbg})`,
+            },
             boxSizing: "border-box",
             borderRadius: "8px",
             px: { xs: 1, md: 0 },
@@ -130,8 +154,8 @@ const DownCounter = ({ time }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            width: { xs: "190px", sm: "150px", md: "300px" },
-            height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
+            width: { xs: "60px", sm: "150px", md: "300px" },
+            height: { xs: "60px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
         >
@@ -158,16 +182,15 @@ const DownCounter = ({ time }) => {
         </Box>
         <Box
           sx={{
-            backgroundImage: {
-              xs: `url(${couterbg1})`,
-              sm: `url(${couterbg})`,
-            },
             mixBlendMode: "normal",
             backgroundPosition: { xs: "center", md: "right" },
             backgroundRepeat: "no-repeat",
             overflow: "hidden",
             backgroundSize: "100% 100%",
-            // backgroundColor: { xs: "#D9D9D9", sm: "transparent" },
+            backgroundImage: {
+              xs: "linear-gradient(to bottom right, #7CDDD1, #68B0E3, #9763A9)",
+              sm: `url(${couterbg})`,
+            },
             boxSizing: "border-box",
             borderRadius: "8px",
             px: { xs: 1, md: 0 },
@@ -175,8 +198,8 @@ const DownCounter = ({ time }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            width: { xs: "190px", sm: "150px", md: "300px" },
-            height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
+            width: { xs: "60px", sm: "150px", md: "300px" },
+            height: { xs: "60px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
         >
@@ -203,16 +226,15 @@ const DownCounter = ({ time }) => {
         </Box>
         <Box
           sx={{
-            backgroundImage: {
-              xs: `url(${couterbg1})`,
-              sm: `url(${couterbg})`,
-            },
             mixBlendMode: "normal",
             backgroundPosition: { xs: "center", md: "right" },
             backgroundRepeat: "no-repeat",
             overflow: "hidden",
             backgroundSize: "100% 100%",
-            // backgroundColor: { xs: "#D9D9D9", sm: "transparent" },
+            backgroundImage: {
+              xs: "linear-gradient(to bottom right, #7CDDD1, #68B0E3, #9763A9)",
+              sm: `url(${couterbg})`,
+            },
             boxSizing: "border-box",
             borderRadius: "8px",
             px: { xs: 1, md: 0 },
@@ -220,8 +242,8 @@ const DownCounter = ({ time }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            width: { xs: "190px", sm: "150px", md: "300px" },
-            height: { xs: "100px", sm: "150px", md: "250px", lg: "300px" },
+            width: { xs: "60px", sm: "150px", md: "300px" },
+            height: { xs: "60px", sm: "150px", md: "250px", lg: "300px" },
             position: "relative",
           }}
         >

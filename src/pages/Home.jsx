@@ -3,40 +3,45 @@ import React from "react";
 import homebg from "../assets/homebg.png";
 import logo from "../assets/logo.png";
 import DownCounter from "../smallComponents/Counter";
+import menu from "../assets/menu.png";
+import mhomebg from "../assets/mhomebg.png";
 
 const Home = () => {
   return (
     <Box
       sx={{
         height: "100vh",
-        backgroundImage: `url(${homebg})`,
+        backgroundImage: { xs: `url(${mhomebg})`, sm: `url(${homebg})` },
         width: "100%",
         mixBlendMode: "normal",
         backgroundPosition: { xs: "center", md: "center" },
         backgroundRepeat: "no-repeat",
         overflow: "hidden",
-        backgroundSize: "cover",
+        backgroundSize: { xs: "contain", sm: "cover" },
         boxSizing: "border-box",
-        py: 15,
+        pb: 15,
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth="xl" sx={{ zIndex: 100 }}>
         <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
-            gap: "30px 0px",
+            justifyContent: "space-between",
+            alignItems: "center",
+            // border: "2px solid red",
+            py: 2,
+            mx: { xs: "0px", xl: "120px" },
           }}
         >
           <Box
             sx={{
               display: "flex",
               justifyContent: "center",
-              gap: "0px 30px",
+              gap: "0px 20px",
               alignItems: "center",
             }}
           >
-            <Box sx={{ width: { xs: "50px", sm: "90px", md: "120px" } }}>
+            <Box sx={{ width: { xs: "30px", sm: "40px", md: "80px" } }}>
               <img
                 src={logo}
                 alt=""
@@ -48,33 +53,42 @@ const Home = () => {
               sx={{
                 color: "#FFF",
                 fontFamily: "Jura",
-                fontSize: { xs: "20px", sm: "40px", md: "50px" },
+                fontSize: { xs: "20px", sm: "20px", md: "30px" },
                 fontStyle: "normal",
                 fontWeight: 700,
                 lineHeight: "normal",
+                mb: "5px",
               }}
             >
               {" "}
               Infiniti Coin
             </Typography>
           </Box>
+          <img src={menu} alt="" srcSet="" />
+        </Box>{" "}
+      </Container>
+      <Container maxWidth="lg">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "30px 0px",
+          }}
+        >
           <Typography
+            className="glow-text"
             sx={{
-              color: "#FFF",
-              fontFamily: "Lalezar",
-              fontSize: { xs: "50px", sm: "90px", md: "118px" },
-              fontStyle: "normal",
-              fontWeight: 400,
-              lineHeight: "90%",
               textAlign: "center",
+              fontSize: { xs: "16px", sm: "30px", md: "40px" },
+              fontWeight: "700",
+              pt: { xs: 10, md: 15 },
             }}
           >
-            Coming Soon
+            Get Ready For Our ICO LAUNCH 🚀
           </Typography>
-          <Typography
-            sx={{ textAlign: "center", fontSize: { xs: "16px", md: "30px" } }}
-          >
-            Get Ready For Our ICO Lunch  🚀
+          <Typography sx={{ textAlign: "center" }}>
+            Our website is currently under construction. We are working
+            diligently to enhance it, and we will be ready to launch soon.
           </Typography>
           <Box>
             <DownCounter />
