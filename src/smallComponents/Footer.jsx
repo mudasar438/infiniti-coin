@@ -14,9 +14,9 @@ const Footer = () => {
         flexDirection: { xs: "column", sm: "row" },
         alignItems: "center",
         width: "100%",
-        mt: { xs: "-50px", sm: "-50px" },
-        gap: "20px 0px",
+        // gap: "20px 0px",
         py: 3,
+        mt: { xs: "100px", sm: "90px", md: 0 },
       }}
     >
       <Box>
