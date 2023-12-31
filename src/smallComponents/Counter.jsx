@@ -62,7 +62,7 @@ const CountdownBox = styled(Box)(({ theme }) => ({
 }));
 const DownCounter = ({ time }) => {
   const classes = useStyles();
-  const targetDate = moment.tz("2024-01-01T00:00:00", "Asia/Dubai");
+  const targetDate = moment.tz("2024-01-10T00:00:00", "Asia/Dubai");
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
   function getTimeRemaining() {
     const now = moment();
@@ -173,10 +173,7 @@ const DownCounter = ({ time }) => {
                 // mt: { xs: 1.5, md: 2.4 },
               }}
             >
-              {timeRemaining?.hours < 10
-                ? // eslint-disable-next-line no-unsafe-optional-chaining
-                  "0" + timeRemaining?.hours
-                : timeRemaining?.hours}
+              {timeRemaining?.hours}
             </TextStyled>
           </CountdownBox>
         </Box>
@@ -217,10 +214,7 @@ const DownCounter = ({ time }) => {
                 // mt: { xs: 1.5, md: 2.4 },
               }}
             >
-              {timeRemaining?.minutes < 10
-                ? // eslint-disable-next-line no-unsafe-optional-chaining
-                  "0" + timeRemaining?.minutes
-                : timeRemaining?.minutes}
+              {timeRemaining?.minutes}
             </TextStyled>
           </CountdownBox>
         </Box>
@@ -261,10 +255,7 @@ const DownCounter = ({ time }) => {
                 // mt: { xs: 1.5, md: 2.4 },
               }}
             >
-              {timeRemaining?.seconds < 10
-                ? // eslint-disable-next-line no-unsafe-optional-chaining
-                  "0" + timeRemaining?.seconds
-                : timeRemaining?.seconds}
+              {timeRemaining?.seconds}
             </TextStyled>
           </CountdownBox>
         </Box>
