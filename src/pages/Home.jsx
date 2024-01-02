@@ -79,7 +79,7 @@ const Home = () => {
                   }}
                 >
                   {" "}
-                  Infiniti Coin
+                  InfinitiCoin
                 </Typography>
               </Box>
               <img src={menu} alt="" srcSet="" />
