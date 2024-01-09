@@ -24,7 +24,10 @@ const Footer = () => {
           <a href="https://t.me/INFINITI_COIN" target="_new">
             <img src={te} alt="" srcSet="" />
           </a>
-          <a href="https://twitter.com/INFINITICOIN" target="_new">
+          <a
+            href="https://twitter.com/infiniti_coin?s=11&t=X7cnYs8ODhi5Go1Cm--_1w"
+            target="_new"
+          >
             <img src={tw} alt="" srcSet="" />
           </a>
           <a href="https://discord.gg/WeCuwkDH" target="_new">

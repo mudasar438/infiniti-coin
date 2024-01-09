@@ -62,7 +62,7 @@ const CountdownBox = styled(Box)(({ theme }) => ({
 }));
 const DownCounter = ({ time }) => {
   const classes = useStyles();
-  const targetDate = moment.tz("2024-01-10T00:00:00", "Asia/Dubai");
+  const targetDate = moment.tz("2024-02-01T00:00:00", "Asia/Dubai");
   const [timeRemaining, setTimeRemaining] = useState(getTimeRemaining());
   function getTimeRemaining() {
     const now = moment();
